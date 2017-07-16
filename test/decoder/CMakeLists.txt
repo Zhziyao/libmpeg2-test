@@ -17,8 +17,8 @@ LINK_DIRECTORIES (
 
 ADD_DEFINITIONS (${CMAKE_C_FLAGS})
 
-ADD_EXECUTABLE (mpeg2test ${mpeg2test_src_files})
+ADD_EXECUTABLE (mpeg2decode ${mpeg2test_src_files})
 
-TARGET_LINK_LIBRARIES (mpeg2test mpeg2dec pthread)
+TARGET_LINK_LIBRARIES (mpegdecode mpeg2dec pthread)
 
 SET (EXECUTABLE_OUTPUT_PATH ${libmpeg2dec_top_srcdir})
