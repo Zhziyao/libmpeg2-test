@@ -1,4 +1,6 @@
-SET (CMAKE_C_FLAGS " -D_LIB -DMULTICORE -fPIC -O3 -DANDROID -Werror  -DX86 -DDISABLE_AVX2 -msse4.2 -mno-avx -DDEFAULT_ARCH=D_ARCH_X86_SSE42 ") 
+PROJECT(libmpeg2dec)
+
+SET (CMAKE_C_FLAGS " -D_LIB -DMULTICORE -fPIC -O3 -DANDROID -Werror -DX86 -DDISABLE_AVX2 -msse4.2 -mno-avx -DDEFAULT_ARCH=D_ARCH_X86_SSE42 ") 
 
 SET (libmpeg2dec_top_srcdir ..)
 
@@ -51,7 +53,7 @@ SET (mpeg2dec_src_files
 	../common/x86/impeg2_inter_pred_sse42_intr.c
 	../common/x86/impeg2_mem_func_sse42_intr.c
 )
- 
+
 INCLUDE_DIRECTORIES(
 	${libmpeg2dec_top_srcdir}/decoder
 	${libmpeg2dec_top_srcdir}/common
